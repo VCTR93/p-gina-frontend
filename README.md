@@ -1,2 +1,6 @@
 # p-gina-frontend
-Desafío de FrontEnd 
+# Herramientas utilizadas
+- HTML5
+- CSS3
+- JavaScript
+- Bootstrap 
