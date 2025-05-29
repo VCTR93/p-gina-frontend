@@ -1,0 +1,79 @@
+/* css/style.css */
+
+/* Fuentes (ej. si usas Google Fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+/* Colores personalizados (variables CSS) */
+:root {
+    --primary-color: #007bff; 
+    --secondary-color: #6c757d; 
+    --accent-color: #ffc107; 
+    --gradient-start: #0056b3; 
+    --gradient-end: #007bff; 
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    min-height: 80vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Estilos para el texto y botones del Hero */
+.hero-section h1 {
+    font-size: calc(2.5rem + 1.5vw);
+}
+
+.hero-section p {
+    font-size: calc(1.2rem + 0.5vw); 
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-section .btn-light {
+    color: var(--gradient-end); /* Color del texto del botón */
+}
+
+.feature-card {
+    border: 1px solid #e0e0e0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección de Call to Action */
+.call-to-action-section {
+    background: linear-gradient(45deg, #17a2b8, #28a745); 
+    /* Otros colores inspirados en eldorado.io */
+    /* background: linear-gradient(45deg, #FF6B6B, #FFD166); */
+    /* background: linear-gradient(45deg, #6a11cb, #2575fc); */
+}
+
+#crypto-prices {
+    background-color: #f8f9fa; /
+}
+
+.crypto-card {
+    transition: transform 0.2s ease-in-out;
+}
+.crypto-card:hover {
+    transform: translateY(-3px);
+}
+
+footer {
+    background-color: #212529; 
+}
+
